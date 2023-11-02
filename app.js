@@ -5,7 +5,7 @@ const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
-.addAnswer('PROBANDO CAPROVER')
+.addAnswer('PROBANDO CAPROVER 2')
 
 const main = async () => {
     const adapterDB = new MockAdapter()
