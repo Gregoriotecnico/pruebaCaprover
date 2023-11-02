@@ -10,7 +10,7 @@ const flowPrincipal = addKeyword(EVENTS.WELCOME)
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowPrincipal])
-    const adapterProvider = createProvider(BaileysProvider)
+    const adapterProvider = createProvider(BaileysProvider, { usePairingCode: true, phoneNumber: '17156927193'})
 
     createBot({
         flow: adapterFlow,
